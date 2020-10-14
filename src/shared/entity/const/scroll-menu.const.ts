@@ -1,6 +1,6 @@
-import {TopMenu} from "../top-menu.vo";
+import {ScrollMenu} from "../top-menu.vo";
 
-export const TOP_MEUNS: TopMenu[] = [
+export const SCROLL_MEUNS: ScrollMenu[] = [
     {
         title: '热门',
         link: '',

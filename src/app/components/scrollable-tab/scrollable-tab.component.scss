@@ -1,0 +1,25 @@
+ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+        //display: inline-b;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5px;
+        white-space: nowrap;
+    }
+
+    .indicator {
+        width: 2rem;
+        height: 2px;
+        background-color: brown;
+        margin-top: 5px;
+    }
+}
+
+.active {
+    color: red;
+}

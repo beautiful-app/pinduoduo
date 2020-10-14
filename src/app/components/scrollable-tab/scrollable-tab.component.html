@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let topMune of scrollMenu,let i = index">
+        <div [class.active]="i === selectedIndex" (click)="handleSelected(i)">{{topMune.title}}</div>
+        <span class="indicator" *ngIf="i === selectedIndex"></span>
+    </li>
+</ul>

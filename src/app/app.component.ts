@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {TopMenu} from "../shared/entity/top-menu.vo";
-import {TOP_MEUNS} from "../shared/entity/const/top-menu.const";
+import {ScrollMenu} from "../shared/entity/top-menu.vo";
+import {SCROLL_MEUNS} from "../shared/entity/const/scroll-menu.const";
 
 @Component({
     selector: 'app-root',
@@ -9,5 +9,9 @@ import {TOP_MEUNS} from "../shared/entity/const/top-menu.const";
 })
 export class AppComponent {
     title = 'pinduoduo';
-    topMenus: TopMenu[] = TOP_MEUNS;
+    scrollMenu: ScrollMenu[] = SCROLL_MEUNS;
+    
+    handleSelected(scrollMenu: ScrollMenu) {
+        console.log(scrollMenu);
+    }
 }

@@ -1,6 +1,3 @@
-<ul>
-    <li *ngFor="let topMune of topMenus"><a href="#">{{topMune.title}}</a></li>
-</ul>
-
+<app-scrollable-tab [scrollMenu]="scrollMenu" (tabSelected)="handleSelected($event)"></app-scrollable-tab>
 
 <!--<router-outlet></router-outlet>-->

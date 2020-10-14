@@ -1,4 +1,4 @@
-export interface TopMenu {
+export interface ScrollMenu {
     title: string;
     link: '';
 }

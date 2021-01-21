@@ -1,6 +1,11 @@
 ul {
     display: flex;
     flex-direction: row;
+    //overflow-x: scroll;
+    overflow-x: auto;
+    // 支持手机上用触摸去滚动，加和不加可能都支持，这个待验证
+    -webkit-overflow-scrolling: touch;
+
 
     li {
         //display: inline-b;
@@ -10,6 +15,7 @@ ul {
         align-items: center;
         margin: 0 5px;
         white-space: nowrap;
+
     }
 
     .indicator {

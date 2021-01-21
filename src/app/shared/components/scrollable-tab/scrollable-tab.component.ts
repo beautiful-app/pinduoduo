@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {ScrollMenu} from "../../../shared/entity/top-menu.vo";
+import {ScrollMenu} from "../../entity/top-menu.vo";
 
 @Component({
     selector: 'app-scrollable-tab',

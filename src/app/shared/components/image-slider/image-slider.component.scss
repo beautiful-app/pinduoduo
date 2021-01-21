@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+    // 不允许有滚动,仅仅是里面的slider可以滚动
+    overflow: hidden;
+
+    .image-slider {
+        display: flex;
+        // x轴可滚动
+        overflow-x: scroll;
+        // 让滚动平滑过渡效果
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        // 强制在横轴上进行吸附
+        scroll-snap-type: x mandatory;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // 吸附在左边
+            scroll-snap-align: start;
+        }
+    }
+
+    .nav-section {
+        display: flex;
+        // 小圆点整体在右边
+        justify-content: flex-end;
+        // 撑起小圆点
+        align-items: stretch;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        opacity: 0.5;
+        color: #fff;
+        background-color: #000;
+
+        .slide-button {
+            //display: flex;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .slide-button-selected {
+            background-color: red;
+        }
+    }
+}
+
